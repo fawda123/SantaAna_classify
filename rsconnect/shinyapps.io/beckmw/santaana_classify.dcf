@@ -5,6 +5,6 @@ account: beckmw
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 261112
-bundleId: 1191712
+bundleId: 1192934
 url: https://beckmw.shinyapps.io/santaana_classify/
-when: 1516847591.30573
+when: 1516904910.09698

@@ -44,7 +44,7 @@ spat <- readOGR('S:/Spatial_Data/NHDPlus/NHDPlus18/Hydrography/nhdflowline_RB8.s
 
 # simplify, join with all expectations
 spat <- spat %>% 
-  st_simplify(dTolerance = 0.003, preserveTopology = T) %>%
+  # st_simplify(dTolerance = 0.003, preserveTopology = T) %>%
   left_join(comid, by = 'COMID') %>% 
   select(COMID, matches('^full0'))
 

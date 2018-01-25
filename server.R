@@ -25,13 +25,13 @@ dmn <- spat %>%
   range(na.rm = T)
 
 dmn_difr <- spat %>% 
-  select(matches('full')) %>% 
+  select(matches('full0.50')) %>% 
   data.frame %>% 
   select(-geometry) %>% 
   gather('var', 'val') %>% 
   .$val %>% 
   range(na.rm = T)
-dmn_difr <- c(min(scrs$csci) - dmn_difr[2], max(scrs$csci) - dmn_difr[1])
+dmn_difr <- c(-0.5, 0.5) #c(min(scrs$csci) - dmn_difr[2], max(scrs$csci) - dmn_difr[1])
 
 # color palette for csci scores
 pal <- colorNumeric(
